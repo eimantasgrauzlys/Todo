@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoWebsite</title>
+   
+</head>
+<body>
+    <main id="pagecenteraligment">
+    <div class="loginregisterwindow">
+        <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">Sveiki atvykę! Pasirinkite!</h2>
+    <div id="buttonsaligments">
+
+        
+        
+        <button id="registerbutton" onclick="document.getElementById('singup').style.display='block'" style="width:auto;">REGISTRUOTIS</button>
+
+        <div id="singup" class="singupwindow">
+          
+          <form class="singupwindow-content animate" id="form" ;>
+            <div class="container">
+              
+              <label for="emailinput"><b>El.Paštas</b></label>
+              <input type="text" placeholder="El.Paštas" name="emailinput" id="emailinput" required>
+        
+              <label for="nameinput"><b>Vardas</b></label>
+              <input type="text" placeholder="Vardas" name="ninput" id="nameinput" required>
+        
+              <label for="lastnameinput"><b>Pavardė</b></label>
+              <input type="text" placeholder="Pavardė" name="lastnameinput" id="lastnameinput" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Prisiminti mane
+                
+                
+              </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                
+                <button id="registerbutton"  type="submit" class="signupbtn" >REGISTRUOTIS</button>
+                <button id="gobackbutton" type="button" onclick="document.getElementById('singup').style.display='none'" class="gobackbutton">Grįžti</button>
+              </div>
+          </form>
+        </div>
+        
+        
+
+
+
+        <button id ="loginbutton" onclick="document.getElementById('login').style.display='block'" style="width:auto;">PRISIJUNGTI</button>
+
+<div id="login" class="loginwindow">
+  
+  <form class="loginwindow-content animate" id="loginform" action="http://127.0.0.1:5501/index.html">
+  
+    <div class="container">
+      <label for="name"><b>Vardas</b></label>
+      <input type="text" placeholder="Vardas" name="name"  id="loginnameinput">
+
+      <label for="lastname"><b>Pavardė</b></label>
+      <input type="text" placeholder="Pavardė" name="lastname" id="loginlastnameinput">
+        
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" > Prisiminti mane
+        <p id="loginerrorbox"></p>
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+        <button id="loginbutton" style="width:250px; margin-left: 1px;" type="submit">PRISIJUNGTI</button>
+      <button id="gobackbutton" type="button"  onclick="document.getElementById('login').style.display='none'" class="gobackbutton">Grįžti</button>
+    </div>
+    
+  </form>
+  
+</div>
+    </div>  
+    </div> 
+</main>
+<script src="index.js">
+   
+</script>   
+</body>
+</html>
